@@ -88,11 +88,9 @@ section#login input[type="email"], input[type="password"] {
 }
 
 span {
-    display: block;
     position: absolute;
     transform: translateY(12%);
-    width: 40bw;
-    
+    left: 80%;
     
 }
 
