@@ -28,7 +28,7 @@ main {
 }
 
 section#container {
-    width: 36vw ;
+    width: 440px;
     height: 350px;
     background-color: rgb(255, 0, 200);
     clip-path: polygon(0 0,100% 0, 100% 100%, 40% 100%);
@@ -39,11 +39,12 @@ section#login {
     display: block;
     background-color: rgba(0, 0, 0, 0.979);
     color: white;
-    width: 25vw;
+    width: 380px;
     height: 350px;
     text-align: center;
     padding-top: 30px;
     transform: translate(10%);
+
     
 }
 
@@ -59,18 +60,18 @@ section#login > p {
     font-size: 0.8em;
 }
 
-section#login > p > a {
+a {
     color:rgb(0, 204, 255);
     text-decoration: none;
 }
 
-section#login > p > a:hover {
+a:hover {
     text-decoration: underline;
     color: white;
     transition-duration: 0.5s;
 }
 
-section#login > #iemail, #isenha {
+#iemail, #isenha {
     width: 250px;
     height: 30px;
     margin-bottom: 15px;
@@ -90,11 +91,10 @@ section#login input[type="email"], input[type="password"] {
 span {
     position: absolute;
     transform: translateY(12%);
-    left: 80%;
+    right: 65px;
     
 }
-
-section#login > #iemail::placeholder, #isenha::placeholder {
+#iemail::placeholder, #isenha::placeholder {
     color: rgb(255, 255, 255);
         
 }
