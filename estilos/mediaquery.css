@@ -12,8 +12,10 @@ Grandes Telas: Acima de 1200px
 
 */
 
+ 
 
-@media screen and (min-width: 600px) and (max-width: 768px){
+            /*Versão para Celular */
+@media screen and (min-width: 600px) and (max-width: 768px) {
 
     * {
         margin: 0px;
@@ -54,6 +56,12 @@ Grandes Telas: Acima de 1200px
         transform: translate(8%);
     }
 
+    section#login h1 {
+        margin: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
     section#login  p {
         font-size: 0.9em
     }
@@ -77,4 +85,80 @@ Grandes Telas: Acima de 1200px
 
 
 }
+
+
+    /*Versão para Telas Pequenas */
+@media screen and (max-width: 600px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    
+
+    main {
+        flex-direction: column-reverse;
+        width: 350px;
+        
+    }
+
+    span {
+        position: absolute;
+        transform: none;
+        right: 30px;
+        
+        
+    }
+
+    section#container {
+        clip-path:none;
+        height: 160px;
+        width: 344px;
+        
+
+    }
+
+    section#login {
+        width: 300px;
+        transform: translate(8%);
+        height: 290px;
+    }
+
+    section#login h1 {
+        margin: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    section#login  p {
+        font-size: 0.9em
+    }
+
+
+    section#container > h1 {
+        text-align: center;
+        font-size: 2em;
+        transform: translate(7%); 
+        margin-top: 40px;
+        
+    }
+
+    section#container > p {
+        text-align: center;
+        transform: translate(7%);
+    }
+    
+    #iemail, #isenha {
+        width: 240px;
+    }
+
+
+}
+
 
